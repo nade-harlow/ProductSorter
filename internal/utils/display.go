@@ -3,7 +3,7 @@ package utils
 import (
 	"fmt"
 	"os"
-	"productSorter/models"
+	"productSorter/internal/models"
 	"text/tabwriter"
 )
 

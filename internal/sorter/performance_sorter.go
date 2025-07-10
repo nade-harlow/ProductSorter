@@ -1,7 +1,7 @@
 package sorter
 
 import (
-	"productSorter/models"
+	"productSorter/internal/models"
 	"sort"
 )
 

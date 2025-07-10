@@ -15,34 +15,6 @@ A modular and extensible product catalog sorting engine written in Go. This tool
 
 ---
 
-## 🗂️ Project Structure
-
-```
-
-.
-├── data/               # Product data source (JSON)
-│   └── products.json
-├── models/             # Shared data models
-│   └── product.go
-├── reader/             # Responsible for reading JSON input
-│   ├── reader.go
-│   └── reader_test.go
-├── sorter/             # All sorting logic (strategy pattern)
-│   ├── performance_sorter.go
-│   ├── price_sorter.go
-│   ├── registry.go
-│   └── sorter_test.go
-├── utils/              # Utility helpers (e.g., table formatting)
-│   ├── display.go
-│   └── display\_test.go
-├── go.mod
-├── main.go             # Entry point (main)
-└── README.md
-
-````
-
----
-
 ## 🚀 Getting Started
 
 ### 📦 Prerequisites
@@ -61,7 +33,7 @@ go mod tidy
 ### ▶️ Run
 
 ```bash
-go run main.go --sort=performance
+go run ./cmd --sort=performance
 ```
 
 This will:

@@ -1,6 +1,8 @@
 package sorter
 
-import "productSorter/models"
+import (
+	"productSorter/internal/models"
+)
 
 type Sorter interface {
 	Sort(products []*models.Product) []*models.Product

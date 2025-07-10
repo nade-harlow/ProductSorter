@@ -4,9 +4,8 @@ import (
 	"encoding/json"
 	"os"
 	"path/filepath"
-	"productSorter/models"
-	"productSorter/reader"
-
+	"productSorter/internal/models"
+	"productSorter/internal/reader"
 	"testing"
 
 	"github.com/stretchr/testify/assert"

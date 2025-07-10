@@ -3,8 +3,8 @@ package utils_test
 import (
 	"bytes"
 	"os"
-	"productSorter/models"
-	"productSorter/utils"
+	"productSorter/internal/models"
+	"productSorter/internal/utils"
 	"strings"
 	"testing"
 

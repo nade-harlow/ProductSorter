@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
-	"productSorter/models"
+	"productSorter/internal/models"
 )
 
 const productFilePath = "data/products.json"

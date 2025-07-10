@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"productSorter/reader"
-	"productSorter/sorter"
-	"productSorter/utils"
+	"productSorter/internal/reader"
+	"productSorter/internal/sorter"
+	"productSorter/internal/utils"
 )
 
 func main() {

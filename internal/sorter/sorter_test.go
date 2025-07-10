@@ -1,10 +1,9 @@
 package sorter_test
 
 import (
+	"productSorter/internal/models"
+	sorter2 "productSorter/internal/sorter"
 	"testing"
-
-	"productSorter/models"
-	"productSorter/sorter"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -18,7 +17,7 @@ func sampleProducts() []*models.Product {
 }
 
 func TestPriceSorter(t *testing.T) {
-	ps := sorter.PriceSorter{}
+	ps := sorter2.PriceSorter{}
 	sorted := ps.Sort(sampleProducts())
 
 	assert.Equal(t, 2, sorted[0].ID)
@@ -27,7 +26,7 @@ func TestPriceSorter(t *testing.T) {
 }
 
 func TestPerformanceSorter(t *testing.T) {
-	ps := sorter.PerformanceSorter{}
+	ps := sorter2.PerformanceSorter{}
 	sorted := ps.Sort(sampleProducts())
 
 	assert.Equal(t, 2, sorted[0].ID)
@@ -36,12 +35,12 @@ func TestPerformanceSorter(t *testing.T) {
 }
 
 func TestRegistry(t *testing.T) {
-	reg := sorter.NewRegistry()
+	reg := sorter2.NewRegistry()
 
-	ps := sorter.PriceSorter{}
-	reg.Register(sorter.PriceSorterType, ps)
+	ps := sorter2.PriceSorter{}
+	reg.Register(sorter2.PriceSorterType, ps)
 
-	got := reg.Get(sorter.PriceSorterType)
+	got := reg.Get(sorter2.PriceSorterType)
 	assert.NotNil(t, got)
 
 	sorted := got.Sort(sampleProducts())
