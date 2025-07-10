@@ -77,9 +77,9 @@ go test ./...
 
 This runs tests for:
 
-* Sorting logic (`sorter/`)
-* Reader functionality (`reader/`)
-* Table rendering (`utils/`)
+* Sorting logic (`internal/sorter/`)
+* Reader functionality (`internal/reader/`)
+* Table rendering (`internal/utils/`)
 
 ---
 
