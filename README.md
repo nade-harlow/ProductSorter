@@ -25,7 +25,7 @@ A modular and extensible product catalog sorting engine written in Go. This tool
 ### 🔧 Installation
 
 ```bash
-git clone https://github.com/yourusername/productSorter.git
+git clone https://github.com/nade-harlow/productSorter.git
 cd productSorter
 go mod tidy
 ````
